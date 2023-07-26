@@ -16,12 +16,13 @@ section{
     border-radius: 14px;
 }
 nav{
-    /* width: 5%; */
-    width: 220px;
+    width: 5%;
+    /* width: 220px; */
     height: 100%;
     background-color: #3f3d56;
     float: left;
     position: absolute;
+    transition: 0.5s ease-in-out;
 }
 ul{
     width: 100%;
@@ -50,4 +51,27 @@ main header{
 main header a{
     padding: 0 5px;
     margin: 0 15px;
+}
+.toggle-nav{
+    position: absolute;
+    top: 10px;
+    left: 6%;
+}
+.checkbox-nav{
+    display: none;
+}
+label .fa-times {
+    display: none;
+}
+input.checkbox-nav:checked ~ nav{
+    width: 20%;
+}
+input.checkbox-nav:checked ~ label .fa-times{
+    display: inline-block;
+}
+input.checkbox-nav:checked ~ label .fa-bars{
+    display: none;
+}
+input.checkbox-nav:checked ~ .toggle-nav{
+    left: 20.2%;
 }
