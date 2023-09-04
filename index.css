@@ -9,11 +9,12 @@ body{
 section{
     background-color: white;
     width: 95%;
-    height: 780px;
+    /* height: 780px; */
     font-family:Arial, Helvetica, sans-serif ;
     margin: 20px auto;
     position: relative;
     border-radius: 14px;
+    overflow: hidden;
 }
 nav{
     width: 5%;
@@ -45,6 +46,7 @@ main{
     width: 85%;
     height: 100%;
     float: right;
+    padding: 10px 30px;
 }
 main header{
     display: flex;
@@ -126,3 +128,76 @@ input.checkbox-nav:checked ~  nav ul li a span {
     display: flex;
     align-items: center;
  }
+ .main-content .banner .content, .main-content .banner .img {
+    width: 50%;
+ }
+ .banner{
+    margin-top: 40px;
+ }
+.main-content .titles h1 {
+    font-size: 80px;
+    padding: 2px 0px 2px 50px;
+}
+.main-content .titles h3, .main-content .titles h1 {
+    padding: 2px 0px 2px 50px;
+    color: #333;
+}
+.main-content .banner p{
+    line-height: 27px;
+    padding: 2px 0px 2px 50px;
+    text-align: justify;
+}
+.main-content > p {
+    text-align: center;
+}
+.projects ul{
+    /* background-color: black; */
+    display: flex;
+    /* flex-direction: column; */
+    flex-wrap: wrap;
+    /* align-items: center; */
+    justify-content: center;
+    gap: 10px;
+}
+.projects ul li {
+    width: 100%;
+    max-width: 300px;
+    height: 350px;
+    border: #333 1px solid;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    text-align: center;
+    border-radius: 10px;
+    background-color: rgba(0, 218, 182, 0.07);
+    border: 0;
+}
+.projects li h3 {
+    text-transform: uppercase;
+    font-weight: 900;
+}
+li .stacks {
+    display: flex;
+    gap: 5px;
+    justify-content: center;
+    font-size: 30px;
+}
+.btns {
+    display: flex;
+    gap: 5px;
+    padding: 10px;
+}
+.projects .btns a {
+    width: 100%;
+}
+.projects .btns button {
+    width: 100%;
+    padding: 10px 0;
+    border: 0;
+    cursor: pointer;
+}
+.btns button:hover {
+    background-color: #3f3d56;
+    transition: ease-in-out 0.3s;
+    color: #fff;
+}
